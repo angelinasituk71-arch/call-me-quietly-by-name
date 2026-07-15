@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Позови меня тихо по имени</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ЕКРАН 1: СТАРТОВА ЗАСТАВКА -->
+    <div id="splash-screen" class="screen">
+        <h1 class="game-title">Позови меня тихо по имени</h1>
+        <button id="enter-btn">ВВОЙТИ В ИГРУ</button>
+    </div>
+
+    <!-- ЕКРАН 2: ГОЛОВНЕ МЕНЮ -->
+    <div id="main-menu" class="screen hidden">
+        <h1 class="game-title">Позови меня тихо по имени</h1>
+        <button id="start-btn">НАЧАТЬ ИГРУ</button>
+    </div>
+
+    <!-- ЕКРАН 3: МЕНЮ ВИБОРУ ГЛАВ -->
+    <div id="chapters-menu" class="screen hidden">
+        <h1 class="game-title">ВЫБОР ГЛАВ</h1>
+        <div class="chapters-list">
+            <button class="chapter-btn" id="chap1-btn">Глава 1: Пробуждение</button>
+            <button class="chapter-btn disabled" disabled>Глава 2: Скоро...</button>
+        </div>
+        <button id="back-btn" class="secondary-btn">НАЗАД</button>
+    </div>
+
+    <!-- ЕКРАН 4: САМА ГРА -->
+    <div id="game-screen" class="screen hidden">
+        
+        <!-- Чорна заставка глави -->
+        <div id="chapter-title-screen">
+            <div class="chapter-number-text">ГЛАВА 1</div>
+            <div class="chapter-name-text">Пробуждение</div>
+        </div>
+
+        <!-- Зображення персонажа зліва (Эстель) -->
+<img id="character-left" class="hidden" src="images/estel_anger.png" alt="Эстель">
+
+<!-- Зображення персонажа справа (Маргарита) -->
+<img id="character-right" class="hidden" src="images/hero_neutral.png" alt="Маргарита">
+
+        <!-- Квадратик для тексту історії (діалогове вікно) -->
+        <div id="dialogue-box" class="hidden">
+            <!-- Маленький квадратик для імені -->
+            <div id="name-box"></div>
+            
+            <!-- Текст гри -->
+            <p id="story-text"></p>
+            
+            <div class="click-indicator">▼ Клікніть, щоб продовжити</div>
+        </div>
+
+    </div>
+
+    <!-- Аудіодоріжки -->
+    <audio id="menu-music" src="audio/menu_theme.mp3" loop></audio>
+    <audio id="chapter-music" src="audio/chapter1.mp3" loop></audio>
+
+    <!-- Підключення логіки гри (має бути в самому кінці body) -->
+    <script src="script.js"></script>
+</body>
+</html>
