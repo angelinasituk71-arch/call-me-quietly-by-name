@@ -199,3 +199,7 @@ button:active {
     /* ... твої інші стилі ... */
     transition: opacity 0.5s ease-in-out; /* Плавне зникнення текстової плашки */
 }
+
+#character-container, #character, .character-container img {
+    background: transparent !important;
+}
