@@ -25,7 +25,8 @@
         <h1 class="game-title">ВЫБОР ГЛАВ</h1>
         <div class="chapters-list">
             <button class="chapter-btn" id="chap1-btn">Глава 1: Пробуждение</button>
-            <button class="chapter-btn disabled" disabled>Глава 2: Скоро...</button>
+            <!-- Оновлена кнопка для другої глави: прибрали disabled і додали правильний id -->
+            <button class="chapter-btn" id="chap2-btn">Глава 2: Пыльный занавес</button>
         </div>
         <button id="back-btn" class="secondary-btn">НАЗАД</button>
     </div>
@@ -34,10 +35,10 @@
     <div id="game-screen" class="screen hidden">
         
         <!-- Чорна заставка глави -->
-        <div id="chapter-title-screen">
-            <div class="chapter-number-text">ГЛАВА 1</div>
-            <div class="chapter-name-text">Пробуждение</div>
-        </div>
+        <div id="chapter-title-screen" class="hidden">
+    <h2 id="chapter-num-text">ГЛАВА 1</h2>
+    <h1 id="chapter-title-text">Пробуждение</h1>
+</div>
 
         <!-- Зображення персонажа зліва (Эстель) -->
 <img id="character-left" class="hidden" src="images/estel_anger.png" alt="Эстель">
