@@ -563,7 +563,7 @@ const dustyCurtainLines = [
         text: "Святая Эстель сошла сума…",
     },
     {
-        name: "", 
+        name: "Маргарита", 
         emotion: "margarita_smile.png", 
         text: "Но мне нравится этот ход мыслей.",
     },
