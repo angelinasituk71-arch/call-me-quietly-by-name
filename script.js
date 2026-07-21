@@ -560,7 +560,7 @@ const dustyCurtainLines = [
     {
         name: "Маргарита", 
         emotion: "margarita_smile.png", 
-        text: "Святая Эстель сошла с ума…",
+        text: "Святая Эстель сошла сума…",
     },
     {
         name: "", 
