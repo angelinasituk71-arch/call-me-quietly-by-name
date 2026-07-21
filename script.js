@@ -741,7 +741,7 @@ const dustyCurtainLines = [
     },
     {
         name: "Маргарита", 
-        emotion: "hero_nautral.png", 
+        emotion: "hero_neutral.png", 
         text: "О свободе, наркотиках, печали и мужчинах.",
     },
     {
